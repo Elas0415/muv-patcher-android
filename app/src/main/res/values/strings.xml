@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muv Patcher</string>
+    <string name="title">Muv Patcher</string>
+    <string name="subtitle">在原版 APK 中注入 LemonLoader，实现汉化与 mod</string>
+    <string name="pick_apk">① 选择原版 APK</string>
+    <string name="start">开始注入</string>
+    <string name="install">安装结果</string>
+    <string name="export">导出 APK</string>
+    <string name="force">允许覆盖已注入的包</string>
+    <string name="not_selected">尚未选择 APK</string>
+    <string name="ready">就绪</string>
+    <string name="translation_title">翻译更新</string>
+    <string name="translation_hint">通过 Shizuku 把上游最新翻译写入游戏目录，重启游戏后生效</string>
+    <string name="translation_idle">尚未检查</string>
+    <string name="check_update">检查更新</string>
+    <string name="apply_update">下载并应用</string>
+</resources>

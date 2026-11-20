@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/subtitle"
+            android:textColor="#757575"
+            android:textSize="13sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/pick_apk" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/not_selected"
+            android:textColor="#616161"
+            android:textSize="13sp" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/force"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/force" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:enabled="false"
+            android:text="@string/start"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="16dp"
+            android:max="1000"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/ready"
+            android:textColor="#757575"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#F5F5F5"
+            android:fontFamily="monospace"
+            android:minHeight="180dp"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:textColor="#424242"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/install"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/install" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/export"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/export" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="#E0E0E0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/translation_title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/translation_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/translation_hint"
+            android:textColor="#757575"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/translation_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/translation_idle"
+            android:textColor="#616161"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/check_update"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/check_update" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/apply_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/apply_update" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

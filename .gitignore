@@ -1,0 +1,9 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+*.apk
+*.idsig
+keys/
+app/src/main/assets/payload.zip
